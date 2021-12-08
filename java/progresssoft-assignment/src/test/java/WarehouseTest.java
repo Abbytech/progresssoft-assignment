@@ -23,7 +23,7 @@ public class WarehouseTest {
 
         Deal deal = new Deal(id, "JOD",
                 "JOD",
-                System.currentTimeMillis()/1000, 100.5f);
+                System.currentTimeMillis(), 100.5f);
 
 
         Exception exception = null;
@@ -45,7 +45,7 @@ public class WarehouseTest {
 
         Deal deal = new Deal(id, "JOD",
                 "JOD",
-                System.currentTimeMillis()/1000, 100.5f);
+                System.currentTimeMillis(), 100.5f);
 
 
         Exception exception = null;

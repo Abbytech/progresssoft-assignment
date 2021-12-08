@@ -10,7 +10,7 @@ public class DealTest {
         try {
             deal = new Deal(0L, "Invalid",
                     "Invalid",
-                    System.currentTimeMillis()/1000, 1);
+                    System.currentTimeMillis(), 1);
         } catch (IllegalArgumentException e) {
             exception = e;
         }

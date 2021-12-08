@@ -47,7 +47,7 @@ public class Warehouse {
         float amount = (float) (Math.random()*100);
         Deal deal = new Deal(id, "JOD",
                 "JOD",
-                System.currentTimeMillis()/1000, amount);
+                System.currentTimeMillis(), amount);
 
         try {
             warehouse.acceptDeal(deal);
