@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  warehouse:
+    build:
+      context: .
+    command: jdbc:mysql://mysqlserver/warehouse admin password
+    depends_on:
+      - "mysqlserver"
+
+  mysqlserver:
+    image: mysql:8.0.23
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=warehouse
